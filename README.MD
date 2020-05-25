@@ -1,6 +1,6 @@
 # Todo-api
 
-This is a CRUD API, for users to read, create, update and delete todo list items.
+This is a CRUD API that allows users to read, create, update and delete *todo* list items.
 
 ## Endpoints
 
