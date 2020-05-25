@@ -1,17 +1,17 @@
 # Todo-api
 
-This is A simple CRUD API, for users to read, create, update and delete todo list items.
+This is a CRUD API, for users to read, create, update and delete todo list items.
 
 ## Endpoints
 
 | Endpoint  | Description |
 | ------------- | ------------- |
-| /login | Autenticate user and retrieve an API token, that must be sent to access /todo endpoints |
-| POST /api/todo | Creates a new todo item for the user authenticated |
-| PUT /api/todo/{id} | Update the todo item identified by id |
-| DELETE /api/todo/{id} | Delete the todo item identified by id |
+| /login | Authenticate user and retrieve an API token that must be sent to access /todo endpoints |
+| POST /api/todo | Create a new todo item for the user authenticated |
+| PUT /api/todo/{id} | Update the todo item identified by id. Only the todo owner can update it. |
+| DELETE /api/todo/{id} | Delete the todo item identified by id. Only the todo owner can delete it. |
 | GET /api/todo/{id} | GET the todo item identified by id |
-| GET /api/todo | GET All the todo items. This endpoint accept optional paramaters as filters: description, category. Ex. /api/todo?description=groceries or /api/todo?category=shopping |
+| GET /api/todo | GET All the todo items. This endpoint accepts optional parameters as filters: description, category. Ex. /api/todo?description=groceries or /api/todo?category=shopping |
 
 
 
@@ -23,7 +23,7 @@ This is A simple CRUD API, for users to read, create, update and delete todo lis
 ```
 npm install
 ```
-4. Create .env file in project root folder to setup DB connection properties and JWT configuration. Ex.:
+4. Create .env file in the project root folder to setup DB connection properties and JWT configuration. Ex.:
 ```
 DB_HOST="localhost"
 DB_NAME="todos"
