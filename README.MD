@@ -23,7 +23,7 @@ This is a CRUD API, for users to read, create, update and delete todo list items
 ```
 npm install
 ```
-4. Create .env file in the project root folder to setup DB connection properties and JWT configuration. Ex.:
+4. Create a .env file in the project root folder to setup DB connection properties and JWT configuration. Ex.:
 ```
 DB_HOST="localhost"
 DB_NAME="todos"
