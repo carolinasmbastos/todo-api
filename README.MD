@@ -6,7 +6,7 @@ This is a CRUD API that allows users to read, create, update and delete *todo* l
 
 | Endpoint  | Description |
 | ------------- | ------------- |
-| /login | Authenticate user and retrieve an API token that must be sent to access /todo endpoints |
+| POST /login | Authenticate user and retrieve an API token that must be sent to access /todo endpoints |
 | POST /api/todo | Create a new todo item for the user authenticated |
 | PUT /api/todo/{id} | Update the todo item identified by id. Only the todo owner can update it. |
 | DELETE /api/todo/{id} | Delete the todo item identified by id. Only the todo owner can delete it. |
